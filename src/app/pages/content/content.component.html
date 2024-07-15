@@ -1,0 +1,23 @@
+<app-nav-bar backToMenu="Voltar ao Inicio"></app-nav-bar>
+
+<div class="content">
+  <a [routerLink]="['']"class="backToMenu"><< Voltar ao menu</a>
+  <div class="info">
+    <div class="title">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="date">
+      <p>{{ date }}</p>
+    </div>
+  </div>
+  <div class="cover">
+    <img src="{{ cover }}" alt="" width="500" height="300">
+  </div>
+  <div class="subtitle">
+    <h3>{{ subtitle }}</h3>
+  </div>
+  <div class="text">
+    <p>{{ text }}</p>
+  </div>
+
+</div>

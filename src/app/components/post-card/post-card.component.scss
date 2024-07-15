@@ -1,0 +1,42 @@
+.post-card{
+  background-color: #b1b2b5;
+  margin: 20px 0;
+  border-radius: 20px;
+  width: 90%;
+  height: 150px;
+  padding: 15px;
+  overflow: hidden;
+
+
+  &:hover{
+    background-color: white;
+    & .to-full-post{
+      animation: pulse 1.5s infinite;
+    }
+  }
+  .data-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .content-post{
+    overflow: hidden;
+    max-height: 49%;
+    font-size: 16px;
+    font-family: 'Consolas';
+  }
+
+  .to-full-post{
+    color: rgb(39, 5, 124);
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+@keyframes pulse {
+  0%{color: white;}
+  25%{color: blue;}
+  75%{color: blue;}
+  100%{color: white;}
+}

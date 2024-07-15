@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --cor-fundo-1:rgb(66, 16, 119);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-fundo-1);
+  justify-content: center;
+  align-items: center;
+  font-family:cursive;
+}

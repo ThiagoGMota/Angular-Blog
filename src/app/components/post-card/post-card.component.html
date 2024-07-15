@@ -1,0 +1,10 @@
+<div class="post-card">
+
+  <div class="data-post">
+    <h2 id="title-post">{{titlePost}}</h2>
+    <h3 id="date-post">{{datePost}}</h3>
+  </div>
+  <p class="content-post" [innerHTML]="contentPost"></p>
+
+  <a [routerLink]="['content',id]" class="to-full-post">Veja o post completo >></a>
+</div>
