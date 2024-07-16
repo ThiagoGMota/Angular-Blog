@@ -3,3 +3,78 @@ app-post-card{
   align-items: center;
   justify-content: center;
 }
+/* .post-container{
+  background-color: #b1b2b5;
+  margin: 20px 0;
+  border-radius: 20px;
+
+
+
+  &:hover{
+    background-color: white;
+    & .to-full-post{
+      animation: pulse 1.5s infinite;
+    }
+  }
+  .data-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .content-post{
+    overflow: hidden;
+    max-height: 49%;
+    font-size: 16px;
+    font-family: 'Consolas';
+  }
+
+  .to-full-post{
+    color: rgb(39, 5, 124);
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+@keyframes pulse {
+  0%{color: white;}
+  25%{color: blue;}
+  75%{color: blue;}
+  100%{color: white;}
+}
+ */
+ .post-item-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post-item {
+  .post-header {
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .post-content {
+    p {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .to-full-post {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #007bff;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+}

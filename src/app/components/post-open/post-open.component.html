@@ -1,9 +1,16 @@
 <app-nav-bar></app-nav-bar>
 
-<app-post-card
-  id="1"
-  titlePost=""
-  datePost=""
-  contentPost=""></app-post-card>
-  <app-post-card
-  id="2"></app-post-card>
+<div *ngFor="let post of dataFake; index as i" class="post-item-container">
+  <div class="post-item">
+    <div class="post-header">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.date }}</p>
+    </div>
+
+    <div class="post-content">
+      <p>{{ post.prevPost }}</p>
+    </div>
+
+    <a [routerLink]="['content',post.id]" class="to-full-post">Veja o post completo >></a>
+  </div>
+</div>
